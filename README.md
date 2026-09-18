@@ -29,7 +29,7 @@ ShiftBar 常驻菜单栏，不显示 Dock 图标。隐藏图标不会关闭对�
 
 系统要求：**macOS 27、Apple Silicon（M 系列芯片）**。目前处于 Alpha 阶段。
 
-[官网](https://shiftbar.0x01.build/) · [下载](https://github.com/Superoutman/ShiftBar-Releases/releases/latest) · [问题反馈](https://github.com/Superoutman/ShiftBar-Releases/issues)
+[官网](https://shiftbar.0x01.build/) · [下载](https://github.com/Superoutman/ShiftBar-Releases/releases) · [问题反馈](https://github.com/Superoutman/ShiftBar-Releases/issues)
 
 ## 使用
 
