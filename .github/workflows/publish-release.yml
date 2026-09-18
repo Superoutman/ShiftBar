@@ -29,9 +29,12 @@ jobs:
           assert re.fullmatch(r'[0-9]+\.[0-9]+\.[0-9]+',d['version'])
           assert d['repository']=='Superoutman/ShiftBar-Releases'
           n='{http://www.andymatuschak.org/xml-namespaces/sparkle}'
-          e=ET.parse('appcast.xml').find('.//enclosure')
-          assert e.attrib[n+'version']==str(d['build'])
-          assert e.attrib[n+'shortVersionString']==d['version']
+          item=ET.parse('appcast.xml').find('.//item')
+          e=item.find('enclosure')
+          assert item.findtext(n+'version')==str(d['build'])
+          assert item.findtext(n+'shortVersionString')==d['version']
+          assert item.findtext(n+'minimumSystemVersion')=='27.0'
+          assert int(e.attrib['length'])==Path(f"ShiftBar-{d['version']}.zip").stat().st_size
           assert e.attrib[n+'edSignature']
           assert e.attrib['url']==f"https://github.com/{d['repository']}/releases/download/v{d['version']}/ShiftBar-{d['version']}.zip"
           Path('version.txt').write_text(d['version'])
