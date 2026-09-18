@@ -1,0 +1,54 @@
+name: Publish verified ShiftBar packages
+on:
+  push:
+    branches: [main]
+    paths: ['distribution/**']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: shiftbar-public-release
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate candidate and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd distribution
+          python3 - <<'PY'
+          import json, re, xml.etree.ElementTree as ET
+          from pathlib import Path
+          d=json.loads(Path('release.json').read_text())
+          assert re.fullmatch(r'0|[1-9][0-9]*',str(d['build']))
+          assert re.fullmatch(r'[0-9]+\.[0-9]+\.[0-9]+',d['version'])
+          assert d['repository']=='Superoutman/ShiftBar-Releases'
+          n='{http://www.andymatuschak.org/xml-namespaces/sparkle}'
+          e=ET.parse('appcast.xml').find('.//enclosure')
+          assert e.attrib[n+'version']==str(d['build'])
+          assert e.attrib[n+'shortVersionString']==d['version']
+          assert e.attrib[n+'edSignature']
+          assert e.attrib['url']==f"https://github.com/{d['repository']}/releases/download/v{d['version']}/ShiftBar-{d['version']}.zip"
+          Path('version.txt').write_text(d['version'])
+          PY
+          sha256sum --check SHA256SUMS
+          version="$(cat version.txt)"
+          tag="v$version"
+          if gh release view "$tag" --json isDraft --jq .isDraft > existing.txt 2>/dev/null; then
+            [[ "$(cat existing.txt)" == true ]] || { echo 'Published versions are immutable'; exit 1; }
+            gh release upload "$tag" --clobber "ShiftBar-$version.zip" "ShiftBar-$version.dmg" appcast.xml SHA256SUMS
+          else
+            gh release create "$tag" --target "$GITHUB_SHA" --title "ShiftBar $version" --notes-file "ShiftBar-$version.md" --draft "ShiftBar-$version.zip" "ShiftBar-$version.dmg" appcast.xml SHA256SUMS
+          fi
+          gh release edit "$tag" --draft=false --latest
+          gh release download "$tag" --dir "$RUNNER_TEMP/readback"
+          for file in "ShiftBar-$version.zip" "ShiftBar-$version.dmg" appcast.xml SHA256SUMS; do
+            cmp "$file" "$RUNNER_TEMP/readback/$file"
+          done
+          curl --fail --location --retry 5 --retry-all-errors "https://github.com/$GITHUB_REPOSITORY/releases/latest/download/appcast.xml" -o "$RUNNER_TEMP/feed.xml"
+          cmp appcast.xml "$RUNNER_TEMP/feed.xml"
