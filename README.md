@@ -46,6 +46,8 @@ Download the `.dmg` installer from [Releases](https://github.com/Superoutman/Shi
 
 On first use, allow ShiftBar in **System Settings → Privacy & Security → Accessibility** so it can read menu bar positions and handle range adjustments.
 
+You can postpone the first permission prompt. Later, right-click the menu bar capsule and choose “Open Accessibility Settings…” to continue. ShiftBar detects permission changes automatically without restarting. With no saved position, the capsule starts near the right edge; a one-time guide appears after the first authorization.
+
 1. **Shift-click** the capsule icon to enter range adjustment.
 2. Wait for the adjustment bar to be ready, then hold **Shift** and drag: left increases the hidden range; right decreases it.
 3. Click the capsule icon to confirm and save the range.
