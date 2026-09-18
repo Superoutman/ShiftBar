@@ -1,16 +1,16 @@
 # ShiftBar
 
 [![官网](https://img.shields.io/badge/website-shiftbar.0x01.build-687d49)](https://shiftbar.0x01.build/)
-[![最新版本](https://img.shields.io/github/v/release/Superoutman/ShiftBar-Releases?label=download&color=3d9868)](https://github.com/Superoutman/ShiftBar-Releases/releases/latest)
-[![下载次数](https://img.shields.io/github/downloads/Superoutman/ShiftBar-Releases/total?label=downloads&color=3d9868)](https://github.com/Superoutman/ShiftBar-Releases/releases)
+[![最新版本](https://img.shields.io/github/v/release/Superoutman/ShiftBar?label=download&color=3d9868)](https://github.com/Superoutman/ShiftBar/releases/latest)
+[![下载次数](https://img.shields.io/github/downloads/Superoutman/ShiftBar/total?label=downloads&color=3d9868)](https://github.com/Superoutman/ShiftBar/releases)
 [![面向 macOS 27](https://img.shields.io/badge/requirements-macOS%2027-d99a39)](#安装)
 [![Apple Silicon](https://img.shields.io/badge/hardware-Apple%20Silicon-777777)](#安装)
 
 [![界面语言](https://img.shields.io/badge/languages-中文%20%7C%20English%20%7C%20日本語-527ca8)](#功能)
-[![Alpha](https://img.shields.io/badge/status-Alpha-d99a39)](https://github.com/Superoutman/ShiftBar-Releases/releases/latest)
-[![Apple 公证](https://img.shields.io/badge/notarized-Apple-3d9868)](https://github.com/Superoutman/ShiftBar-Releases/releases/latest)
-[![GitHub Stars](https://img.shields.io/github/stars/Superoutman/ShiftBar-Releases?style=flat&color=9872b3)](https://github.com/Superoutman/ShiftBar-Releases/stargazers)
-[![问题反馈](https://img.shields.io/github/issues/Superoutman/ShiftBar-Releases?label=issues&color=527ca8)](https://github.com/Superoutman/ShiftBar-Releases/issues)
+[![Alpha](https://img.shields.io/badge/status-Alpha-d99a39)](https://github.com/Superoutman/ShiftBar/releases/latest)
+[![Apple 公证](https://img.shields.io/badge/notarized-Apple-3d9868)](https://github.com/Superoutman/ShiftBar/releases/latest)
+[![GitHub Stars](https://img.shields.io/github/stars/Superoutman/ShiftBar?style=flat&color=9872b3)](https://github.com/Superoutman/ShiftBar/stargazers)
+[![问题反馈](https://img.shields.io/github/issues/Superoutman/ShiftBar?label=issues&color=527ca8)](https://github.com/Superoutman/ShiftBar/issues)
 
 ShiftBar **面向 macOS 27**，是对系统原生菜单栏折叠功能的补充工具，让你可以主动设置隐藏范围，并手动展开或收起图标。
 
@@ -35,11 +35,11 @@ ShiftBar 常驻菜单栏，不显示 Dock 图标。隐藏图标不会关闭对�
 
 ## 安装
 
-从本仓库的 [Releases](https://github.com/Superoutman/ShiftBar-Releases/releases/latest) 页面下载 `.dmg` 安装包，将 **ShiftBar.app** 移入 **应用程序** 文件夹后打开。
+从本仓库的 [Releases](https://github.com/Superoutman/ShiftBar/releases/latest) 页面下载 `.dmg` 安装包，将 **ShiftBar.app** 移入 **应用程序** 文件夹后打开。
 
 **面向 macOS 27**，需要 Apple Silicon（M 系列芯片）。目前处于 Alpha 阶段。
 
-[官网](https://shiftbar.0x01.build/) · [下载](https://github.com/Superoutman/ShiftBar-Releases/releases) · [问题反馈](https://github.com/Superoutman/ShiftBar-Releases/issues)
+[官网](https://shiftbar.0x01.build/) · [下载](https://github.com/Superoutman/ShiftBar/releases) · [问题反馈](https://github.com/Superoutman/ShiftBar/issues)
 
 ## 使用
 
@@ -62,4 +62,4 @@ ShiftBar 常驻菜单栏，不显示 Dock 图标。隐藏图标不会关闭对�
 
 ## 问题反馈
 
-请通过本仓库的 [Issues](https://github.com/Superoutman/ShiftBar-Releases/issues) 提交问题或建议。反馈显示、折叠或调节问题时，请提供 macOS 版本、ShiftBar 版本、显示器使用情况及复现步骤；必要时附上截图或短录屏。
+请通过本仓库的 [Issues](https://github.com/Superoutman/ShiftBar/issues) 提交问题或建议。反馈显示、折叠或调节问题时，请提供 macOS 版本、ShiftBar 版本、显示器使用情况及复现步骤；必要时附上截图或短录屏。
