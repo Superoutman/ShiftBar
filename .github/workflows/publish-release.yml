@@ -40,6 +40,16 @@ jobs:
           Path('version.txt').write_text(d['version'])
           PY
           sha256sum --check SHA256SUMS
+          if previous="$(gh release view --json tagName --jq .tagName 2>/dev/null)"; then
+            gh release download "$previous" --pattern appcast.xml --dir "$RUNNER_TEMP/previous-release"
+            python3 - "$RUNNER_TEMP/previous-release/appcast.xml" <<'PYBUILD'
+          import sys, xml.etree.ElementTree as ET
+          n='{http://www.andymatuschak.org/xml-namespaces/sparkle}'
+          old=int(ET.parse(sys.argv[1]).findtext('.//'+n+'version'))
+          new=int(ET.parse('appcast.xml').findtext('.//'+n+'version'))
+          assert new>old, 'Build number must increase for every release'
+          PYBUILD
+          fi
           version="$(cat version.txt)"
           tag="v$version"
           if gh release view "$tag" --json isDraft --jq .isDraft > existing.txt 2>/dev/null; then
