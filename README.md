@@ -2,7 +2,6 @@
 
 [![官网](https://img.shields.io/badge/website-shiftbar.0x01.build-687d49)](https://shiftbar.0x01.build/)
 [![最新版本](https://img.shields.io/github/v/release/Superoutman/ShiftBar?label=download&color=3d9868)](https://github.com/Superoutman/ShiftBar/releases/latest)
-[![下载次数](https://img.shields.io/github/downloads/Superoutman/ShiftBar/total?label=downloads&color=3d9868)](https://github.com/Superoutman/ShiftBar/releases)
 [![面向 macOS 27](https://img.shields.io/badge/requirements-macOS%2027-d99a39)](#安装)
 [![Apple Silicon](https://img.shields.io/badge/hardware-Apple%20Silicon-777777)](#安装)
 
