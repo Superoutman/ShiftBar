@@ -23,9 +23,7 @@ ShiftBar 常驻菜单栏，不显示 Dock 图标。隐藏图标不会关闭对�
 
 ## 安装
 
-首个公开安装包正在准备，完成签名与 Apple 公证后将在 [Releases](https://github.com/Superoutman/ShiftBar-Releases/releases) 发布。
-
-发布后，下载 `.dmg` 安装包，将 **ShiftBar.app** 移入 **应用程序** 文件夹后打开。
+从本仓库的 [Releases](https://github.com/Superoutman/ShiftBar-Releases/releases/latest) 页面下载 `.dmg` 安装包，将 **ShiftBar.app** 移入 **应用程序** 文件夹后打开。
 
 系统要求：**macOS 27、Apple Silicon（M 系列芯片）**。目前处于 Alpha 阶段。
 
