@@ -34,9 +34,9 @@ jobs:
           assert item.findtext(n+'version')==str(d['build'])
           assert item.findtext(n+'shortVersionString')==d['version']
           assert item.findtext(n+'minimumSystemVersion')=='27.0'
-          assert int(e.attrib['length'])==Path(f"ShiftBar-{d['version']}.zip").stat().st_size
+          assert int(e.attrib['length'])==Path(f"ShiftBar-{d['version']}.dmg").stat().st_size
           assert e.attrib[n+'edSignature']
-          assert e.attrib['url']==f"https://github.com/{d['repository']}/releases/download/v{d['version']}/ShiftBar-{d['version']}.zip"
+          assert e.attrib['url']==f"https://github.com/{d['repository']}/releases/download/v{d['version']}/ShiftBar-{d['version']}.dmg"
           Path('version.txt').write_text(d['version'])
           PY
           sha256sum --check SHA256SUMS
@@ -54,13 +54,13 @@ jobs:
           tag="v$version"
           if gh release view "$tag" --json isDraft --jq .isDraft > existing.txt 2>/dev/null; then
             [[ "$(cat existing.txt)" == true ]] || { echo 'Published versions are immutable'; exit 1; }
-            gh release upload "$tag" --clobber "ShiftBar-$version.zip" "ShiftBar-$version.dmg" appcast.xml SHA256SUMS
+            gh release upload "$tag" --clobber "ShiftBar-$version.dmg" appcast.xml SHA256SUMS
           else
-            gh release create "$tag" --target "$GITHUB_SHA" --title "ShiftBar $version" --notes-file "ShiftBar-$version.md" --draft "ShiftBar-$version.zip" "ShiftBar-$version.dmg" appcast.xml SHA256SUMS
+            gh release create "$tag" --target "$GITHUB_SHA" --title "ShiftBar $version" --notes-file "ShiftBar-$version.md" --draft "ShiftBar-$version.dmg" appcast.xml SHA256SUMS
           fi
           gh release edit "$tag" --draft=false --latest
           gh release download "$tag" --dir "$RUNNER_TEMP/readback"
-          for file in "ShiftBar-$version.zip" "ShiftBar-$version.dmg" appcast.xml SHA256SUMS; do
+          for file in "ShiftBar-$version.dmg" appcast.xml SHA256SUMS; do
             cmp "$file" "$RUNNER_TEMP/readback/$file"
           done
           curl --fail --location --retry 5 --retry-all-errors "https://github.com/$GITHUB_REPOSITORY/releases/latest/download/appcast.xml" -o "$RUNNER_TEMP/feed.xml"
