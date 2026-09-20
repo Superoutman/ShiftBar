@@ -3,21 +3,18 @@
     <channel>
         <title>ShiftBar</title>
         <item>
-            <title>0.1.12</title>
-            <pubDate>Sun, 20 Sep 2026 06:39:37 +0000</pubDate>
-            <sparkle:version>13</sparkle:version>
-            <sparkle:shortVersionString>0.1.12</sparkle:shortVersionString>
+            <title>0.1.13</title>
+            <pubDate>Sun, 20 Sep 2026 08:00:36 +0000</pubDate>
+            <sparkle:version>14</sparkle:version>
+            <sparkle:shortVersionString>0.1.13</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[- 外接显示器与内置屏使用同一隐藏结果，支持显示器热插拔后自动恢复。
-- 缩短调节范围后的保存与收起等待，首次授权后在后台预先准备调节位置。
-- 右键菜单新增「登录时自动启动」，并调整了版本、使用说明和关于的菜单布局。
-- 修复多屏隐藏后 Shift＋单击偶尔无法显示调节条的问题。
-
-已知问题：Synology Drive 的菜单栏进程暂不兼容当前多屏隐藏机制。折叠时，其图标可能随隐藏组消失，即使它位于希望保留的区域；展开 ShiftBar 后会恢复显示。
+            <description sparkle:format="markdown"><![CDATA[- 切换桌面空间时保持当前隐藏状态，不再短暂闪现已隐藏的菜单栏图标。
+- 调节范围触发系统折叠后，按住 Command 重排其他图标再点击 ShiftBar 胶囊，也能正常完成并收起。
+- 提高清晰度：辅助功能授权卡片中的 ShiftBar 图标改为 Retina 像素网格对齐的矢量图形。
 
 系统要求：macOS 27、Apple Silicon（M 系列芯片）。
 ]]></description>
-            <enclosure url="https://github.com/Superoutman/ShiftBar/releases/download/v0.1.12/ShiftBar-0.1.12.dmg" length="3468291" type="application/octet-stream" sparkle:edSignature="vmeUBYce/iXdPcK0CD/36nABIBWFMHFuhGT4dJroG6r5mTexvOdevKSBozLbkOa799ui/ZI7mLdH4Zoe/+MlCA=="/>
+            <enclosure url="https://github.com/Superoutman/ShiftBar/releases/download/v0.1.13/ShiftBar-0.1.13.dmg" length="3465095" type="application/octet-stream" sparkle:edSignature="E6R1yHld3bFIRijQAg//xXDA6boXQww/HIGk5QHejZ0aiRtGTIqyNXW+WnFTEEuG/26I0et+s1B91XVRH/nlAA=="/>
         </item>
     </channel>
 </rss>
