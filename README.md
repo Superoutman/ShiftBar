@@ -30,6 +30,8 @@ macOS handles the folding through its native layout. ShiftBar provides control o
 - **Hide all icons to the left:** set this from the context menu.
 - **Save and restore a backup:** save a separate copy of your hidden range. Further adjustments do not overwrite it; restore it from the menu when needed.
 - **Remember settings:** when reopened, the app attempts to restore the last confirmed hidden range.
+- **Consistent across displays:** the built-in and external displays keep the same collapsed result.
+- **Launch at login:** enable or disable the system login item from the context menu.
 - **Three interface languages:** Simplified Chinese, English and Japanese, following macOS language preferences.
 
 ShiftBar stays in the menu bar without a Dock icon. Hiding an icon does not quit its application.
@@ -60,6 +62,7 @@ The context menu provides range adjustment, hiding all icons to the left, saving
 
 - The adjustable range depends on screen space, the notch area and the current menu bar layout. The app shows a message when you reach the limit.
 - If permissions are unavailable or the layout cannot be confirmed, ShiftBar expands the icons and keeps the previously saved range and backup.
+- **Known issue:** Synology Drive is not yet compatible with the current multi-display hiding mechanism. While collapsed, its icon may disappear with the hidden group even when it is inside the intended retained area; expanding ShiftBar restores it.
 - The hidden range and backup are stored locally. Menu bar organization works offline and does not require an account.
 - The interface follows the order of preferred languages in macOS and supports per-app language settings. It falls back to English when no supported language matches; other Chinese variants use Simplified Chinese. Reopen the app after changing its language.
 
