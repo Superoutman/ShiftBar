@@ -3,18 +3,16 @@
     <channel>
         <title>ShiftBar</title>
         <item>
-            <title>0.1.13</title>
-            <pubDate>Sun, 20 Sep 2026 08:00:36 +0000</pubDate>
-            <sparkle:version>14</sparkle:version>
-            <sparkle:shortVersionString>0.1.13</sparkle:shortVersionString>
+            <title>0.1.14</title>
+            <pubDate>Mon, 21 Sep 2026 09:21:19 +0000</pubDate>
+            <sparkle:version>15</sparkle:version>
+            <sparkle:shortVersionString>0.1.14</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[- 切换桌面空间时保持当前隐藏状态，不再短暂闪现已隐藏的菜单栏图标。
-- 调节范围触发系统折叠后，按住 Command 重排其他图标再点击 ShiftBar 胶囊，也能正常完成并收起。
-- 提高清晰度：辅助功能授权卡片中的 ShiftBar 图标改为 Retina 像素网格对齐的矢量图形。
-
-系统要求：macOS 27、Apple Silicon（M 系列芯片）。
+            <description sparkle:format="markdown"><![CDATA[- 修复在外接显示器上调整隐藏范围后，点击胶囊无法保存并收起的问题。
+- 外接屏没有系统溢出箭头时，使用另一屏已确认的隐藏边界，保持两屏隐藏范围一致，避免误隐藏全部图标。
+- 无法可靠确认范围时保留上次配置，保护已有隐藏范围和独立备份。
 ]]></description>
-            <enclosure url="https://github.com/Superoutman/ShiftBar/releases/download/v0.1.13/ShiftBar-0.1.13.dmg" length="3465095" type="application/octet-stream" sparkle:edSignature="E6R1yHld3bFIRijQAg//xXDA6boXQww/HIGk5QHejZ0aiRtGTIqyNXW+WnFTEEuG/26I0et+s1B91XVRH/nlAA=="/>
+            <enclosure url="https://github.com/Superoutman/ShiftBar/releases/download/v0.1.14/ShiftBar-0.1.14.dmg" length="3503116" type="application/octet-stream" sparkle:edSignature="ipVbS87hklKj+35xzetStbdMqV1CFZnOu9PrWc8gtEKxnc0ygNQN1ApTvZ5l4NVHkXYtt5vmPl7jXwhYhM1hCA=="/>
         </item>
     </channel>
 </rss>
