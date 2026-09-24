@@ -19,9 +19,9 @@ macOS 27 会在菜单栏空间不足时自动折叠图标，但即使空间仍�
 
 折叠仍由 macOS 的原生布局处理。ShiftBar 提供范围调节、展开与收起，以及配置保存。
 
-![ShiftBar 菜单栏交互演示](images/menu-bar-demo.png)
+![ShiftBar 功能展示](images/menu-bar-demo.png)
 
-*官网交互演示，实际效果以 App 为准。*
+*ShiftBar 功能展示，实际效果以 App 为准。*
 
 ## 功能
 
