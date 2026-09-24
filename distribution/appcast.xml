@@ -3,15 +3,17 @@
     <channel>
         <title>ShiftBar</title>
         <item>
-            <title>0.1.15</title>
-            <pubDate>Tue, 22 Sep 2026 03:54:42 +0000</pubDate>
-            <sparkle:version>16</sparkle:version>
-            <sparkle:shortVersionString>0.1.15</sparkle:shortVersionString>
+            <title>0.1.16</title>
+            <pubDate>Thu, 24 Sep 2026 02:06:25 +0000</pubDate>
+            <sparkle:version>17</sparkle:version>
+            <sparkle:shortVersionString>0.1.16</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[- 修复只打开调节条、未拖动便收起时，隐藏范围可能发生变化的问题。
-- 未修改调节宽度时直接沿用上次确认的范围；首次设置、实际拖动和需要重新验证的范围仍执行完整安全检查。
+            <description sparkle:format="markdown"><![CDATA[- 修复收起状态恢复隐藏区域备份时，旧隐藏状态干扰布局校准、导致再次展开的问题。
+- 多屏调节共用各屏最小安全宽度上限，外接屏也受主屏可用空间约束；到达上限立即提示，避免占位过宽影响收起。
+- 进入调节立即显示沙漏反馈；图标重排后，在布局确认未变时减少重复等待，保留原有安全检查。
+- 调节中显示器布局发生变化时退出未保存调节，保留原隐藏范围，重新进入后计算新的安全上限。
 ]]></description>
-            <enclosure url="https://github.com/Superoutman/ShiftBar/releases/download/v0.1.15/ShiftBar-0.1.15.dmg" length="3503698" type="application/octet-stream" sparkle:edSignature="HJR8W+8/OzcWkqV8Jt9qbn69rhoP6BtTYNLBFsS5dim7ZpEoblFlWFpcitWmcUQXbt4AFRHBRMWfw9q7b/rMAg=="/>
+            <enclosure url="https://github.com/Superoutman/ShiftBar/releases/download/v0.1.16/ShiftBar-0.1.16.dmg" length="3527804" type="application/octet-stream" sparkle:edSignature="uQ8lw644w3DtByyWtSo3cERmq78gGEeKuuj46sktvR3m5widaRnj5LHbqHIKefTj63WvqfuBpfYMFfAXAEbABQ=="/>
         </item>
     </channel>
 </rss>
