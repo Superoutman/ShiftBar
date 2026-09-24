@@ -19,7 +19,9 @@ macOS 27 folds icons when the menu bar runs out of space. You may still want to 
 
 macOS handles the folding through its native layout. ShiftBar provides control over the hidden range, manual expansion and collapse, and saved settings.
 
-<img src="images/menu-bar-demo.png" alt="ShiftBar overview" width="720">
+<p align="center">
+  <img src="images/menu-bar-demo.png" alt="ShiftBar overview" width="720">
+</p>
 
 *ShiftBar overview. Refer to the app for actual behavior.*
 
