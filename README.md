@@ -23,7 +23,7 @@ macOS handles the folding through its native layout. ShiftBar provides control o
   <img src="images/menu-bar-demo.png" alt="ShiftBar overview" width="720">
 </p>
 
-*ShiftBar overview. Refer to the app for actual behavior.*
+<p align="center"><em>ShiftBar overview. Refer to the app for actual behavior.</em></p>
 
 ## Features
 

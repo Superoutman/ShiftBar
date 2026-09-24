@@ -23,7 +23,7 @@ macOS 27 会在菜单栏空间不足时自动折叠图标，但即使空间仍�
   <img src="images/menu-bar-demo.png" alt="ShiftBar 功能展示" width="720">
 </p>
 
-*ShiftBar 功能展示，实际效果以 App 为准。*
+<p align="center"><em>ShiftBar 功能展示，实际效果以 App 为准。</em></p>
 
 ## 功能
 
