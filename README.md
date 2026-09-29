@@ -63,7 +63,8 @@ The context menu provides range adjustment, hiding all icons to the left, saving
 ## Notes
 
 - The adjustable range depends on screen space, the notch area and the current menu bar layout. The app shows a message when you reach the limit.
-- If permissions are unavailable or the layout cannot be confirmed, ShiftBar expands the icons and keeps the previously saved range and backup.
+- With the laptop lid closed, finishing adjustment exits the editor and restores the previous range. Open the lid to save a new range.
+- If a new range cannot be confirmed, ShiftBar exits adjustment and restores the previous collapsed range when possible. If no usable range exists or restoration fails, it expands the icons while preserving saved settings and the backup.
 - **Known issue:** Synology Drive is not yet compatible with the current multi-display hiding mechanism. While collapsed, its icon may disappear with the hidden group even when it is inside the intended retained area; expanding ShiftBar restores it.
 - The hidden range and backup are stored locally. Menu bar organization works offline and does not require an account.
 - The interface follows the order of preferred languages in macOS and supports per-app language settings. It falls back to English when no supported language matches; other Chinese variants use Simplified Chinese. Reopen the app after changing its language.
