@@ -1,14 +1,4 @@
-<?xml version="1.0" standalone="yes"?>
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
-    <channel>
-        <title>ShiftBar</title>
-        <item>
-            <title>0.1.21</title>
-            <pubDate>Thu, 08 Oct 2026 11:17:50 +0000</pubDate>
-            <sparkle:version>22</sparkle:version>
-            <sparkle:shortVersionString>0.1.21</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[这是紧随 0.1.20 推出的紧急修复版本，重点解决首次启用调节条和双屏系统图标隐藏的问题。
+这是紧随 0.1.20 推出的紧急修复版本，重点解决首次启用调节条和双屏系统图标隐藏的问题。
 
 **本次修复**
 
@@ -26,8 +16,3 @@
 **仍存在的已知问题**
 
 隐藏范围包含电池、Wi‑Fi 等系统图标时，展开仍可能出现短暂闪动或横移，本次未修复此现象。若菜单栏存在原生溢出箭头（`«`），可尝试通过箭头查看相关系统图标，以缓解主栏横移；效果取决于各屏布局，宽屏不一定出现箭头。
-]]></description>
-            <enclosure url="https://github.com/Superoutman/ShiftBar/releases/download/v0.1.21/ShiftBar-0.1.21.dmg" length="3634104" type="application/octet-stream" sparkle:edSignature="EOGNJZ7q7W4MSyHhjy3OUOpJgQEAK2nMoFRwunZCUWdmrRuGt0gxTnK2XZP/TnXsgJ4v/Gn2Z+vwT8kmad0gDw=="/>
-        </item>
-    </channel>
-</rss>
