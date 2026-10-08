@@ -27,7 +27,7 @@ macOS handles the folding through its native layout. ShiftBar provides control o
 
 ## Features
 
-- **Expand and collapse manually:** click the capsule icon in the menu bar to toggle between the two states.
+- **Expand and collapse manually:** click the capsule icon in the menu bar to toggle between the two states. Click the desktop or another window to collapse after expanding.
 - **Adjust the hidden range:** drag the adjustment bar directly in the menu bar to choose which icons on the left to hide.
 - **Hide all icons to the left:** set this from the context menu.
 - **Save and restore a backup:** save a separate copy of your hidden range. Further adjustments do not overwrite it; restore it from the menu when needed.
@@ -54,7 +54,7 @@ You can postpone the first permission prompt. Later, right-click the menu bar ca
 
 1. **Shift-click** the capsule icon to enter range adjustment.
 2. Wait for the adjustment bar to be ready, then hold **Shift** and drag: left increases the hidden range; right decreases it.
-3. Click the capsule icon to confirm and save the range.
+3. Click the capsule icon, the desktop, or another window to confirm and save the range.
 
 Once configured, click normally to expand the hidden icons, then click again to collapse them.
 
@@ -66,6 +66,7 @@ The context menu provides range adjustment, hiding all icons to the left, saving
 - With the laptop lid closed, finishing adjustment exits the editor and restores the previous range. Open the lid to save a new range.
 - If a new range cannot be confirmed, ShiftBar exits adjustment and restores the previous collapsed range when possible. If no usable range exists or restoration fails, it expands the icons while preserving saved settings and the backup.
 - **Known issue:** Synology Drive is not yet compatible with the current multi-display hiding mechanism. While collapsed, its icon may disappear with the hidden group even when it is inside the intended retained area; expanding ShiftBar restores it.
+- **Known issue:** When the hidden range includes system icons such as Battery or Wi-Fi, they may appear after app icons during reveal, briefly causing a flicker or horizontal shift. If macOS shows its native overflow arrow (`«`), try moving those system icons into the native overflow area and access them through the arrow. This avoided the second shift in the tested layout. Overflow differs by display, and the arrow may not appear on a wider screen.
 - The hidden range and backup are stored locally. Menu bar organization works offline and does not require an account.
 - The interface follows the order of preferred languages in macOS and supports per-app language settings. It falls back to English when no supported language matches; other Chinese variants use Simplified Chinese. Reopen the app after changing its language.
 
