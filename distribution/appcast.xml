@@ -3,31 +3,20 @@
     <channel>
         <title>ShiftBar</title>
         <item>
-            <title>0.1.21</title>
-            <pubDate>Thu, 08 Oct 2026 11:17:50 +0000</pubDate>
-            <sparkle:version>22</sparkle:version>
-            <sparkle:shortVersionString>0.1.21</sparkle:shortVersionString>
+            <title>0.1.22</title>
+            <pubDate>Fri, 09 Oct 2026 08:37:01 +0000</pubDate>
+            <sparkle:version>23</sparkle:version>
+            <sparkle:shortVersionString>0.1.22</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[这是紧随 0.1.20 推出的紧急修复版本，重点解决首次启用调节条和双屏系统图标隐藏的问题。
+            <description sparkle:format="markdown"><![CDATA[胶囊右键菜单新增「复制诊断信息」。遇到调节条不出现、「布局检查未通过」或调整后恢复旧范围时，可以复制报告并自行粘贴到 GitHub Issue，帮助定位失败阶段。
 
-**本次修复**
-
-- 更新权限设置引导，兼容「设备控制和数据访问」与「辅助功能」入口名称。
-- 修复首次安装后，后台布局校准被显示器变化中断时，调节条可能一直停留在“正在准备”、无法激活的问题。中断后可重新进入调节。
-- 修复双屏使用时，电池等系统图标已在一块屏幕上进入原生溢出区、仍在另一块屏幕上可见，导致保存隐藏范围时漏选、收起后仍显示的问题。
-
-**回顾 0.1.20 的亮点**
-
-- 应用图标与可管理的系统图标共同遵循所选隐藏范围，重启和独立备份均保留选择。
-- 展开后点击桌面或其他窗口即可收起；调节后点击外部也可完成范围确认与保存。
-- 改进拖动调节和图标识别，修复 Input Source Pro 等应用图标暂时漏读造成的预览与收起不一致。
-- 改进“隐藏左侧全部图标”，支持系统图标已处于 macOS 原生溢出区的情况。
+报告记录失败时的检查结果，并在复制时连续两次读取各显示器的菜单栏布局。报告中的第三方应用图标使用匿名编号；不包含第三方应用名称、文件路径或完整设置。复制不会自动上传，也不会修改已保存的隐藏范围。
 
 **仍存在的已知问题**
 
-隐藏范围包含电池、Wi‑Fi 等系统图标时，展开仍可能出现短暂闪动或横移，本次未修复此现象。若菜单栏存在原生溢出箭头（`«`），可尝试通过箭头查看相关系统图标，以缓解主栏横移；效果取决于各屏布局，宽屏不一定出现箭头。
+隐藏范围包含电池、Wi‑Fi 等系统图标时，展开仍可能出现短暂闪动或横移。本次更新增加诊断能力，未改变此行为。若菜单栏存在原生溢出箭头（`«`），可尝试通过箭头查看相关系统图标，以缓解主栏横移；效果取决于各屏布局。
 ]]></description>
-            <enclosure url="https://github.com/Superoutman/ShiftBar/releases/download/v0.1.21/ShiftBar-0.1.21.dmg" length="3634104" type="application/octet-stream" sparkle:edSignature="EOGNJZ7q7W4MSyHhjy3OUOpJgQEAK2nMoFRwunZCUWdmrRuGt0gxTnK2XZP/TnXsgJ4v/Gn2Z+vwT8kmad0gDw=="/>
+            <enclosure url="https://github.com/Superoutman/ShiftBar/releases/download/v0.1.22/ShiftBar-0.1.22.dmg" length="3690318" type="application/octet-stream" sparkle:edSignature="9C9+T5AHPr+iqxA0dw67XQI1MfByJ6LNpvovgF3v4v3fKoe73mXPSF2NfUQzuUkhyTJOibqS5FnM8ZKKfhCwCQ=="/>
         </item>
     </channel>
 </rss>
