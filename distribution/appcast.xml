@@ -3,20 +3,14 @@
     <channel>
         <title>ShiftBar</title>
         <item>
-            <title>0.1.22</title>
-            <pubDate>Fri, 09 Oct 2026 08:37:01 +0000</pubDate>
-            <sparkle:version>23</sparkle:version>
-            <sparkle:shortVersionString>0.1.22</sparkle:shortVersionString>
+            <title>0.1.23</title>
+            <pubDate>Mon, 12 Oct 2026 02:35:39 +0000</pubDate>
+            <sparkle:version>24</sparkle:version>
+            <sparkle:shortVersionString>0.1.23</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[胶囊右键菜单新增「复制诊断信息」。遇到调节条不出现、「布局检查未通过」或调整后恢复旧范围时，可以复制报告并自行粘贴到 GitHub Issue，帮助定位失败阶段。
-
-报告记录失败时的检查结果，并在复制时连续两次读取各显示器的菜单栏布局。报告中的第三方应用图标使用匿名编号；不包含第三方应用名称、文件路径或完整设置。复制不会自动上传，也不会修改已保存的隐藏范围。
-
-**仍存在的已知问题**
-
-隐藏范围包含电池、Wi‑Fi 等系统图标时，展开仍可能出现短暂闪动或横移。本次更新增加诊断能力，未改变此行为。若菜单栏存在原生溢出箭头（`«`），可尝试通过箭头查看相关系统图标，以缓解主栏横移；效果取决于各屏布局。
+            <description sparkle:format="markdown"><![CDATA[改进部分菜单栏布局下 Shift＋单击胶囊后反复提示「布局检查未通过」、无法打开调节条的情况。进入调节时会重新确认预览项的位置与图标顺序；若仍无法安全确认，保留原隐藏范围。
 ]]></description>
-            <enclosure url="https://github.com/Superoutman/ShiftBar/releases/download/v0.1.22/ShiftBar-0.1.22.dmg" length="3690318" type="application/octet-stream" sparkle:edSignature="9C9+T5AHPr+iqxA0dw67XQI1MfByJ6LNpvovgF3v4v3fKoe73mXPSF2NfUQzuUkhyTJOibqS5FnM8ZKKfhCwCQ=="/>
+            <enclosure url="https://github.com/Superoutman/ShiftBar/releases/download/v0.1.23/ShiftBar-0.1.23.dmg" length="3733678" type="application/octet-stream" sparkle:edSignature="BmGXWwgt+RU0pR1+qCc+zVkGsy0rwGhFMHDviWG3tzMWnSKDNwLYMNGfhdz0fakmOiycF0fhKDX89SsJcfeoDg=="/>
         </item>
     </channel>
 </rss>
